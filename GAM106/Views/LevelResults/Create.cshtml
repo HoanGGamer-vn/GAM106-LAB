@@ -1,0 +1,24 @@
+@model GAM106.Models.LevelResult
+
+@{
+    ViewData["Title"] = "Report Level Result";
+}
+
+<h1>Report Level Result</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="levelId">Level</label>
+        <select id="levelId" name="levelId" class="form-control">
+            @foreach (var l in (IEnumerable<GAM106.Models.GameLevel>)ViewBag.Levels)
+            {
+                <option value="@l.LevelId">@l.Title</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="score">Score</label>
+        <input type="number" id="score" name="score" class="form-control" value="0" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

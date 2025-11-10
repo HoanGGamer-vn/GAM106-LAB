@@ -1,0 +1,29 @@
+@model IEnumerable<GAM106.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>Users</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var u in Model)
+    {
+        <tr>
+            <td>@u.UserName</td>
+            <td>@u.FullName</td>
+            <td>@u.Email</td>
+            <td>@u.CreatedAt.ToLocalTime().ToString("g")</td>
+        </tr>
+    }
+    </tbody>
+</table>

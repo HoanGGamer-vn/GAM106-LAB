@@ -1,0 +1,29 @@
+@model IEnumerable<GAM106.Models.LevelResult>
+
+@{
+    ViewData["Title"] = "All Level Results";
+}
+
+<h1>All Level Results (Admin)</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Level</th>
+            <th>Score</th>
+            <th>Completed At</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var r in Model)
+    {
+        <tr>
+            <td>@r.User?.UserName</td>
+            <td>@r.Level?.Title</td>
+            <td>@r.Score</td>
+            <td>@r.CompletedAt.ToLocalTime().ToString("g")</td>
+        </tr>
+    }
+    </tbody>
+</table>
