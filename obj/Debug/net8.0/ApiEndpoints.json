@@ -1,0 +1,236 @@
+[
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "Get",
+    "RelativePath": "api/APIGame",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "GAM106_LAB.Models.ApiResponse\u00601[[GAM106_LAB.Models.GameModel, GAM106-LAB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "GetAllGameLevel",
+    "RelativePath": "api/APIGame/GetAllGameLevel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "GetAllQuestionGameByLevel",
+    "RelativePath": "api/APIGame/GetAllQuestionGameByLevel/{levelId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "levelId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "GetAllRegions",
+    "RelativePath": "api/APIGame/GetAllRegions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/APIGame/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "GetQuestionGame",
+    "RelativePath": "api/APIGame/GetQuestionGame",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "levelId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "GetUserInformation",
+    "RelativePath": "api/APIGame/GetUserInformation/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "Login",
+    "RelativePath": "api/APIGame/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "Rating",
+    "RelativePath": "api/APIGame/Rating",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "top",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "Register",
+    "RelativePath": "api/APIGame/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDTOs",
+        "Type": "System.Collections.Generic.List\u00601[[GAM106_LAB.DTO.RegisterDTO, GAM106-LAB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.APIGame",
+    "Method": "SaveResult",
+    "RelativePath": "api/APIGame/SaveResult",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "GAM106_LAB.DTO.SaveResultDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.LevelResultsController",
+    "Method": "Get",
+    "RelativePath": "api/LevelResults",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GAM106_LAB.Models.LevelResult, GAM106-LAB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.LevelResultsController",
+    "Method": "Post",
+    "RelativePath": "api/LevelResults",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GAM106_LAB.Models.LevelResult",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GAM106_LAB.Models.LevelResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GAM106_LAB.Controllers.LevelResultsController",
+    "Method": "Get",
+    "RelativePath": "api/LevelResults/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GAM106_LAB.Models.LevelResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
